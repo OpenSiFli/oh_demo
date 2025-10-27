@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/apple/.ohos/config/default_SifliIntegration_ML_PL4gvAHLgOxvpyxgYrQY1XKBdczp7D-Yffn8ULLQ=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B2D92301B71FFA22C7FCE4154E6C4CC4E93AB440AB37B4274542679B3CA2741A899ACB4BF0C7335",
+          "profile": "/Users/apple/.ohos/config/default_SifliIntegration_ML_PL4gvAHLgOxvpyxgYrQY1XKBdczp7D-Yffn8ULLQ=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/apple/.ohos/config/default_SifliIntegration_ML_PL4gvAHLgOxvpyxgYrQY1XKBdczp7D-Yffn8ULLQ=.p12",
+          "storePassword": "0000001BD83C8A22ACD820D0EDBC86CF69B63B819FF72BCE6881578859F63BFBDEA11610A8CA379B4E5D41"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

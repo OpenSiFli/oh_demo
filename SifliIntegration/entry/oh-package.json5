@@ -1,0 +1,16 @@
+{
+  "name": "entry",
+  "version": "1.0.4",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@sifli/siflicore": "1.0.1",
+    "@sifli/sfwatchfacesdk": "1.0.1",
+    "@sifli/sifliotasdk": "2.0.1",
+    "@pie/log4a": "^1.5.16",
+    "@sifli/ezipsdk": "2.4.5"
+  }
+}
+

@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "SiFliIntegration"
+    },
+    {
+      "name": "open_bluetooth",
+      "value": "请开启蓝牙权限以连接设备"
+    },
+    {
+      "name": "reason",
+      "value": "需要蓝牙权限"
+    },
+    {
+      "name": "media",
+      "value": "需要访问媒体文件"
+    }
+  ]
+}
