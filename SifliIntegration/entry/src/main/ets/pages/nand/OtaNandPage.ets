@@ -4,7 +4,7 @@ import { OtaNandCallbackImpl } from "./OtaNandCallbackImpl"
 import promptAction from '@ohos.promptAction';
 import { ArrayList } from '@kit.ArkTS';
 import { SpeedView } from '../utils/SpeedView/SpeedView';
-import { SFOtaManager,NandImageID,OTAImageFileInfo } from '@sifli/sifliotasdk';
+import { SFOtaManager,NandImageID,OTAImageFileInfo, SFOTAProgressStage } from '@sifli/sifliotasdk';
 import { ImageFileItem } from './ImageFileItem';
 import { window } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
@@ -32,6 +32,7 @@ export  struct OtaNandPage {
   // 定义回调实现类
   private callbackImpl: OtaNandCallbackImpl | null = null;
   private currentImageFile:ImageFileItem | null = null;
+  private progressStage:SFOTAProgressStage = SFOTAProgressStage.NAND_RES;
 
   build() {
     Column() {
@@ -465,9 +466,13 @@ export  struct OtaNandPage {
     this.logs = [...this.logs, msg];
   }
 
-  public updateProgress(current: number, total: number): void {
+  public updateProgress(stage: SFOTAProgressStage,current: number, total: number): void {
     // this.progress = (current / total * 100).toFixed(2);
     SFLog.i(TAG, `progress ${current}/${total}}`);
+    if(stage != this.progressStage){
+      this.speedView.clear();
+      this.progressStage = stage;
+    }
     this.speedView.viewSpeedByCompleteBytes(current);
     this.speedText = this.speedView.getSpeedTextWithBytes(current,total);
     if(total > 0){

@@ -27,7 +27,7 @@ export class OtaNandCallbackImpl implements ISFOtaManagerCallback{
    * @param stage @see SFOTAProgressStage 进度阶段
    * */
   onProgress(stage: SFOTAProgressStage, currentBytes: number, totalBytes: number): void{
-    this.page.updateProgress(currentBytes,totalBytes);
+    this.page.updateProgress(stage,currentBytes,totalBytes);
   }
 
   /**
