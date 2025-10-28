@@ -3,7 +3,7 @@
     "bundleName": "com.example.sifliintegration",
     "vendor": "sifli",
     "versionCode": 1000000,
-    "versionName": "1.0.1",
+    "versionName": "1.0.2",
     "icon": "$media:layered_image",
     "label": "$string:app_name"
   }
