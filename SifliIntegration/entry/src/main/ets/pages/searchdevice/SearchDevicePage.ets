@@ -1,6 +1,7 @@
 import { BluetoothDevice } from './BluetoothDevice';
 import ble from '@ohos.bluetooth.ble';
 import { SFLog } from '@sifli/siflicore';
+import { access } from '@kit.ConnectivityKit';
 
 const  TAG: string = "SearchDevicePage";
 @Entry
@@ -122,8 +123,9 @@ struct SearchDevicePage {
   }
 
   private onSelectedItem(mac:string):void{
-    this.selectedDevice = mac
-    this.stopScan()
+    this.selectedDevice = mac;
+    this.persistentDevice(mac);
+    this.stopScan();
     this.getUIContext()?.getRouter()?.back({
       url:'pages/Index',
       params:{
@@ -140,5 +142,14 @@ struct SearchDevicePage {
     return this.devices.some((device: BluetoothDevice) =>
     device.mac === id
     )
+  }
+
+  private persistentDevice(deviceId:string):void{
+
+    try {
+      access.addPersistentDeviceId(deviceId);
+    } catch (err) {
+      console.error('errCode: ' + err.code + ', errMessage: ' + err.message);
+    }
   }
 }

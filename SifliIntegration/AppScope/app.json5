@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.example.sifliintegration",
+    "bundleName": "com.sifli.sifliintegration",
     "vendor": "sifli",
     "versionCode": 1000000,
     "versionName": "1.0.2",
