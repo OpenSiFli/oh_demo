@@ -214,7 +214,7 @@ struct EzipTestPage {
           })
 
         Button("SeqPngToEzip")
-          .width(120)
+          .width(160)
           .height(40)
           .margin({left:10})
           .fontSize(15)

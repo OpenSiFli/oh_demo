@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "/Users/apple/.ohos/config/default_SifliIntegration_vkSGKn5qEGQy3cgzZQoBi3PE6lrybRPWIWbjOT87Ddo=.cer",
-          "keyAlias": "debugKey",
-          "keyPassword": "000000191A5B658CDA309080E327C7CF811AB54ECDC4191863DF98CC10AF1F87B3F0F2D1F6493526C6",
-          "profile": "/Users/apple/.ohos/config/default_SifliIntegration_vkSGKn5qEGQy3cgzZQoBi3PE6lrybRPWIWbjOT87Ddo=.p7b",
+          "storeFile": "/Users/apple/Sifli/Harmony/cer/p12/sifli_pub.p12",
+          "storePassword": "000000192089E0291C1D3A7318846ECDEE7468FAB2223D1A2CE0FA40B6132C682398B87AA7529BE767",
+          "keyAlias": "sifli_pub",
+          "keyPassword": "00000019011CDBDC9C84275D5298307185CFE018048DB0F69169EDED13D50A824FB7E766CD6D124A95",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/apple/.ohos/config/default_SifliIntegration_vkSGKn5qEGQy3cgzZQoBi3PE6lrybRPWIWbjOT87Ddo=.p12",
-          "storePassword": "00000019850430C8430258ADEAB700F337C6E979DB473A3E81DFEE7A0F49ADF7494FA81C67C69800F8"
+          "profile": "/Users/apple/Sifli/Harmony/cer/profile/sifli_pub2_profileRelease.p7b",
+          "certpath": "/Users/apple/Sifli/Harmony/cer/cerFromServer/sifli_pub.cer"
         }
       }
     ],

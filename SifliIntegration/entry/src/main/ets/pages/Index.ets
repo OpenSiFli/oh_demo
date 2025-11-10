@@ -12,7 +12,7 @@ const  TAG: string = "Index";
 @Entry
 @Component
 struct Index {
-  @State title: string = 'SFIntegration'
+  @State title: string = 'SFIntegrationI'
   @State version: string = '1.0.0'
   @State selectedMac: string = '' // 新增状态变量存储MAC地址
 
@@ -41,6 +41,11 @@ struct Index {
     id: 'otaNorV1',
     text: 'OTA Nor V1',
     onClick: this.otaNorV1.bind(this)
+  },
+  {
+    id: 'otaV3',
+    text: 'OTA V3',
+    onClick: this.otaNorV3.bind(this)
   },
   {
     id: 'eZipTest',
@@ -128,8 +133,7 @@ struct Index {
       "ohos.permission.DISCOVER_BLUETOOTH",
       "ohos.permission.APPROXIMATELY_LOCATION",
       "ohos.permission.LOCATION",
-      "ohos.permission.ACCESS_BLUETOOTH",
-      "ohos.permission.READ_MEDIA"
+      "ohos.permission.ACCESS_BLUETOOTH"
     ];
     PermissionHelper.requestPermissions(permissions, results => {
       for (let i = 0; i < permissions.length; i++) {
@@ -183,6 +187,15 @@ private otaNorV2(): void {
     // 第二版固件升级逻辑
     this.getUIContext()?.getRouter()?.pushUrl({
       url: 'pages/norv1/OtaNorV1Page',
+      params: { fromPage: 'index',mac:this.selectedMac }
+    });
+  }
+
+  private otaNorV3(): void {
+    SFLog.i(TAG,'otaNorV3  button clicked')
+    // 第二版固件升级逻辑
+    this.getUIContext()?.getRouter()?.pushUrl({
+      url: 'pages/otav3/OtaV3Page',
       params: { fromPage: 'index',mac:this.selectedMac }
     });
   }
