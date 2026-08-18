@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "storeFile": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/p12/sifli_pub.p12",
-          "storePassword": "000000192089E0291C1D3A7318846ECDEE7468FAB2223D1A2CE0FA40B6132C682398B87AA7529BE767",
-          "keyAlias": "sifli_pub",
-          "keyPassword": "00000019011CDBDC9C84275D5298307185CFE018048DB0F69169EDED13D50A824FB7E766CD6D124A95",
+          "certpath": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BD4BBE3F13DA0D5F95EDE74470FE8AA4C7A77457724EA22D42F0276AF8DF9433AAE31519948C482",
+          "profile": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.p7b",
           "signAlg": "SHA256withECDSA",
-          "profile": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/profile/sifli_pub2_profileRelease.p7b",
-          "certpath": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/cerFromServer/sifli_pub.cer"
+          "storeFile": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.p12",
+          "storePassword": "0000001B8B92C0F84AFF3BB7D4A989BC575B01ADEA22E6FB984F1B22F218A3D9AE0F9D93C8CAE59A2705D0"
         }
       }
     ],
