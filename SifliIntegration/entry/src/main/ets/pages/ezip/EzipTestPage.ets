@@ -456,21 +456,21 @@ struct EzipTestPage {
   // }
 
   // 使用鸿蒙的TaskPool实现真异步
-  private static async pngToEzipAsync(imageData: Uint8Array, ezipColor: string, noAlphaNum: number, noRotationNum: number, boardType: number): Promise<Uint8Array | null> {
-    // const  runner = new taskpool.SequenceRunner();
-    // const task = new taskpool.Task()
-    return new Promise((resolve) => {
-      taskpool.execute(() => {
-        try {
-          const result = SifliEzipUtil.pngToEzip(imageData, ezipColor, noAlphaNum, noRotationNum, boardType);
-          resolve(result);
-        } catch (error) {
-          SFLog.e(TAG, "pngToEzipAsync error1. " + error);
-          resolve(null);
-        }
-      });
-    });
-  }
+  // private static async pngToEzipAsync(imageData: Uint8Array, ezipColor: string, noAlphaNum: number, noRotationNum: number, boardType: number): Promise<Uint8Array | null> {
+  //   // const  runner = new taskpool.SequenceRunner();
+  //   // const task = new taskpool.Task()
+  //   return new Promise((resolve) => {
+  //     taskpool.execute(() => {
+  //       try {
+  //         const result = SifliEzipUtil.pngToEzip(imageData, ezipColor, noAlphaNum, noRotationNum, boardType);
+  //         resolve(result);
+  //       } catch (error) {
+  //         SFLog.e(TAG, "pngToEzipAsync error1. " + error);
+  //         resolve(null);
+  //       }
+  //     });
+  //   });
+  // }
 
 
   private  onStopBtnTouch():void{

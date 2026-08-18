@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "storeFile": "/Users/apple/Sifli/Harmony/cer/p12/sifli_pub.p12",
+          "storeFile": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/p12/sifli_pub.p12",
           "storePassword": "000000192089E0291C1D3A7318846ECDEE7468FAB2223D1A2CE0FA40B6132C682398B87AA7529BE767",
           "keyAlias": "sifli_pub",
           "keyPassword": "00000019011CDBDC9C84275D5298307185CFE018048DB0F69169EDED13D50A824FB7E766CD6D124A95",
           "signAlg": "SHA256withECDSA",
-          "profile": "/Users/apple/Sifli/Harmony/cer/profile/sifli_pub2_profileRelease.p7b",
-          "certpath": "/Users/apple/Sifli/Harmony/cer/cerFromServer/sifli_pub.cer"
+          "profile": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/profile/sifli_pub2_profileRelease.p7b",
+          "certpath": "/Users/Zhuanz/hecq/mac2018/Sifli/Harmony/cer/cerFromServer/sifli_pub.cer"
         }
       }
     ],
