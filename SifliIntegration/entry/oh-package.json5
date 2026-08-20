@@ -6,7 +6,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@sifli/siflicore": "1.0.6",
+    "@sifli/siflicore": "1.0.7",
     "@sifli/sfwatchfacesdk": "1.0.2",
     "@sifli/sifliotasdk": "2.1.4",
     "@pie/log4a": "^1.5.16",
