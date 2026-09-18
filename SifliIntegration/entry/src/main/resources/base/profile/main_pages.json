@@ -8,6 +8,7 @@
     "pages/norv1/OtaNorV1Page",
     "pages/log/LogManagePage",
     "pages/ezip/EzipTestPage",
-    "pages/otav3/OtaV3Page"
+    "pages/otav3/OtaV3Page",
+    "pages/noroffline/OtaNorOfflinePage"
   ]
 }

@@ -13,3 +13,7 @@
    - eZIPSDK 2.5.5
    
    升级ezip内核 2.6.4，支持57x.
+   
+### 1.0.7
+   - SifliOtaSdk 2.2.2
+   增加SDK 工程 nor offline 单文件ota

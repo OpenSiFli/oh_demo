@@ -43,6 +43,11 @@ struct Index {
     onClick: this.otaNorV1.bind(this)
   },
   {
+    id: 'otaNorOffline',
+    text: 'OTA Nor Offline',
+    onClick: this.otaNorOffline.bind(this)
+  },
+  {
     id: 'otaV3',
     text: 'OTA V3',
     onClick: this.otaNorV3.bind(this)
@@ -187,6 +192,15 @@ private otaNorV2(): void {
     // 第二版固件升级逻辑
     this.getUIContext()?.getRouter()?.pushUrl({
       url: 'pages/norv1/OtaNorV1Page',
+      params: { fromPage: 'index',mac:this.selectedMac }
+    });
+  }
+
+  private otaNorOffline(): void {
+    SFLog.i(TAG,'otaNorOffline  button clicked')
+    // 第二版固件升级逻辑
+    this.getUIContext()?.getRouter()?.pushUrl({
+      url: 'pages/noroffline/OtaNorOfflinePage',
       params: { fromPage: 'index',mac:this.selectedMac }
     });
   }

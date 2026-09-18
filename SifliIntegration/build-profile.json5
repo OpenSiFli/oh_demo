@@ -7,11 +7,11 @@
         "material": {
           "certpath": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001BD4BBE3F13DA0D5F95EDE74470FE8AA4C7A77457724EA22D42F0276AF8DF9433AAE31519948C482",
+          "keyPassword": "0000001B4FFD92F3118EB23252B798F4A5B07502B296E84E9DE9867AAE272259952FFCFA577C31D3D5FFA7",
           "profile": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "/Users/Zhuanz/.ohos/config/default_SifliIntegration_NlEU_VKvJXysShrVBLLoRgBFiGISpwOSWoj429N_d8E=.p12",
-          "storePassword": "0000001B8B92C0F84AFF3BB7D4A989BC575B01ADEA22E6FB984F1B22F218A3D9AE0F9D93C8CAE59A2705D0"
+          "storePassword": "0000001BB29C69BB58A65145C1F187F698462280176DC2AE4F32311058CDE78D11D4BED15F6BF50F6ECC7C"
         }
       }
     ],

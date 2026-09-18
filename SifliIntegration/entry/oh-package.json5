@@ -1,6 +1,6 @@
 {
   "name": "entry",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Please describe the basic information.",
   "main": "",
   "author": "",
@@ -8,7 +8,7 @@
   "dependencies": {
     "@sifli/siflicore": "1.1.0",
     "@sifli/sfwatchfacesdk": "1.0.2",
-    "@sifli/sifliotasdk": "2.2.1",
+    "@sifli/sifliotasdk": "2.2.2",
     "@pie/log4a": "^1.5.16",
     "@sifli/ezipsdk": "2.5.5"
   }
