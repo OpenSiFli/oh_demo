@@ -4,10 +4,12 @@ import { OtaV3CallbackImpl } from "./OtaV3CallbackImpl"
 import promptAction from '@ohos.promptAction';
 import { ArrayList } from '@kit.ArkTS';
 import { SpeedView } from '../utils/SpeedView/SpeedView';
-import { SFOtaV3Manager,OtaV3ImageID,OtaV3ResourceFileInfo,OtaV3DfuFileType,OtaV3BinFileInfo } from '@sifli/sifliotasdk';
+import { SFOtaV3Manager,OtaV3ImageID,OtaV3ResourceFileInfo,OtaV3BinFileInfo } from '@sifli/sifliotasdk';
+
 import { window } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { ImageFileItem } from '../nand/ImageFileItem';
+import { OtaV3DfuFileType } from '@sifli/siflisol2model';
 
 
 const TAG:string = "OtaV3Page"
